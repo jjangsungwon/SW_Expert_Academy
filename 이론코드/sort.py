@@ -14,8 +14,8 @@ def CountingSort(A, B, k):
     for i in range(0, len(B)):
         C[A[i]] += 1
 
-    for i in rangee(1, len(C)):
-        C[i] += c[i-1]
+    for i in range(1, len(C)):
+        C[i] += C[i-1]
 
     for i in range(len(B)-1, -1, -1):
         B[C[A[i]]-1] = A[i]
