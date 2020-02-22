@@ -8,7 +8,7 @@ def CountingSort(A, B, k):
     # A - 입력 리스트 사용된 숫자
     # B - 정렬된 리스트
     # C - 카운트 리스트
-    
+
     C = [0] * K
 
     for i in range(0, len(B)):
@@ -18,5 +18,5 @@ def CountingSort(A, B, k):
         C[i] += c[i-1]
 
     for i in range(len(B)-1, -1, -1):
-        B[C[A[i]]-1]] = A[i]
+        B[C[A[i]]-1] = A[i]
         C[A[i]] -= 1
